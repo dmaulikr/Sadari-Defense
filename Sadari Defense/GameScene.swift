@@ -43,6 +43,10 @@ class GameScene: SKScene {
         }
     }
     
+    func setupWithFrame(frame: CGRect) {
+        
+    }
+    
     
     func touchDown(atPoint pos : CGPoint) {
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {

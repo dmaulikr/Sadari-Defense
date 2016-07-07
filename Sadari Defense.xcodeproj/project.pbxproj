@@ -15,21 +15,22 @@
 		7F13DE951D2EF61A00E825A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F13DE931D2EF61A00E825A0 /* Main.storyboard */; };
 		7F13DE971D2EF61A00E825A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F13DE961D2EF61A00E825A0 /* Assets.xcassets */; };
 		7F13DE9A1D2EF61A00E825A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F13DE981D2EF61A00E825A0 /* LaunchScreen.storyboard */; };
-		7F13DEA21D2EF63B00E825A0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 7F13DEA11D2EF63B00E825A0 /* README.md */; };
+		7F13DEA81D2EFF3C00E825A0 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F13DEA71D2EFF3C00E825A0 /* SpriteComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F13DE861D2EF61A00E825A0 /* Sadari Defense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sadari Defense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F13DE891D2EF61A00E825A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F13DE8B1D2EF61A00E825A0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		7F13DE8D1D2EF61A00E825A0 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		7F13DE8F1D2EF61A00E825A0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		7F13DE911D2EF61A00E825A0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		7F13DE891D2EF61A00E825A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Sadari Defense (iOS)/AppDelegate.swift"; sourceTree = "<group>"; };
+		7F13DE8B1D2EF61A00E825A0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = Assets/GameScene.sks; sourceTree = "<group>"; };
+		7F13DE8D1D2EF61A00E825A0 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Actions.sks; path = Assets/Actions.sks; sourceTree = "<group>"; };
+		7F13DE8F1D2EF61A00E825A0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = "Sadari Defense/GameScene.swift"; sourceTree = SOURCE_ROOT; };
+		7F13DE911D2EF61A00E825A0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "Sadari Defense (iOS)/GameViewController.swift"; sourceTree = "<group>"; };
 		7F13DE941D2EF61A00E825A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7F13DE961D2EF61A00E825A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F13DE961D2EF61A00E825A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
 		7F13DE991D2EF61A00E825A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7F13DE9B1D2EF61A00E825A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F13DE9B1D2EF61A00E825A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Sadari Defense (iOS)/Info.plist"; sourceTree = "<group>"; };
 		7F13DEA11D2EF63B00E825A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7F13DEA71D2EFF3C00E825A0 /* SpriteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpriteComponent.swift; path = "Sadari Defense/Components/SpriteComponent.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,18 +64,55 @@
 		7F13DE881D2EF61A00E825A0 /* Sadari Defense */ = {
 			isa = PBXGroup;
 			children = (
-				7F13DE891D2EF61A00E825A0 /* AppDelegate.swift */,
-				7F13DE8B1D2EF61A00E825A0 /* GameScene.sks */,
-				7F13DE8D1D2EF61A00E825A0 /* Actions.sks */,
+				7F13DEA61D2EFF1D00E825A0 /* Components */,
 				7F13DE8F1D2EF61A00E825A0 /* GameScene.swift */,
-				7F13DE911D2EF61A00E825A0 /* GameViewController.swift */,
-				7F13DE931D2EF61A00E825A0 /* Main.storyboard */,
-				7F13DE961D2EF61A00E825A0 /* Assets.xcassets */,
-				7F13DE981D2EF61A00E825A0 /* LaunchScreen.storyboard */,
-				7F13DE9B1D2EF61A00E825A0 /* Info.plist */,
+				7F13DEA51D2EFEDC00E825A0 /* Entities */,
+				7F13DEA41D2EFEC900E825A0 /* Assets */,
+				7F13DEA31D2EFEB600E825A0 /* iOS */,
 			);
 			path = "Sadari Defense";
 			sourceTree = "<group>";
+		};
+		7F13DEA31D2EFEB600E825A0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7F13DE891D2EF61A00E825A0 /* AppDelegate.swift */,
+				7F13DE911D2EF61A00E825A0 /* GameViewController.swift */,
+				7F13DE931D2EF61A00E825A0 /* Main.storyboard */,
+				7F13DE981D2EF61A00E825A0 /* LaunchScreen.storyboard */,
+				7F13DE9B1D2EF61A00E825A0 /* Info.plist */,
+			);
+			name = iOS;
+			path = "Sadari Defense";
+			sourceTree = SOURCE_ROOT;
+		};
+		7F13DEA41D2EFEC900E825A0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7F13DE8B1D2EF61A00E825A0 /* GameScene.sks */,
+				7F13DE8D1D2EF61A00E825A0 /* Actions.sks */,
+				7F13DE961D2EF61A00E825A0 /* Assets.xcassets */,
+			);
+			name = Assets;
+			path = "Sadari Defense";
+			sourceTree = SOURCE_ROOT;
+		};
+		7F13DEA51D2EFEDC00E825A0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			path = "Sadari Defense";
+			sourceTree = SOURCE_ROOT;
+		};
+		7F13DEA61D2EFF1D00E825A0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7F13DEA71D2EFF3C00E825A0 /* SpriteComponent.swift */,
+			);
+			name = Components;
+			path = "Sadari Defense";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -153,8 +191,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F13DE901D2EF61A00E825A0 /* GameScene.swift in Sources */,
+				7F13DEA81D2EFF3C00E825A0 /* SpriteComponent.swift in Sources */,
 				7F13DE921D2EF61A00E825A0 /* GameViewController.swift in Sources */,
-				7F13DEA21D2EF63B00E825A0 /* README.md in Sources */,
 				7F13DE8A1D2EF61A00E825A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +206,7 @@
 				7F13DE941D2EF61A00E825A0 /* Base */,
 			);
 			name = Main.storyboard;
+			path = "Sadari Defense (iOS)";
 			sourceTree = "<group>";
 		};
 		7F13DE981D2EF61A00E825A0 /* LaunchScreen.storyboard */ = {
@@ -176,6 +215,7 @@
 				7F13DE991D2EF61A00E825A0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = "Sadari Defense (iOS)";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,7 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Sadari Defense/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sadari Defense/Sadari Defense (iOS)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mtso.Sadari-Defense";
@@ -285,7 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Sadari Defense/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sadari Defense/Sadari Defense (iOS)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mtso.Sadari-Defense";
