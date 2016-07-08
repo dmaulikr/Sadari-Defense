@@ -22,9 +22,12 @@ class GameScene: SKScene {
 
         self.lastUpdateTime = 0
         
+        backgroundColor = UIColor.white()
+        
         // Get label node from scene and store it for use later
         self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
         if let label = self.label {
+            label.fontColor = UIColor.blue()
             label.alpha = 0.0
             label.run(SKAction.fadeIn(withDuration: 2.0))
         }
@@ -40,6 +43,14 @@ class GameScene: SKScene {
             spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
                                               SKAction.fadeOut(withDuration: 0.5),
                                               SKAction.removeFromParent()]))
+        }
+    }
+    
+    override func didMove(to view: SKView) {
+        
+        for index in 1...5 {
+            let lane = LaneEntity(index: LaneIndex(rawValue: index)!, frame: view.frame)
+            lane.componentForClass(SpriteComponent)?.position = CGPoint(x: CGFloat(index) * (view.frame.width / 6), y: view.frame.midY)
         }
     }
     

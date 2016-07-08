@@ -16,6 +16,14 @@
 		7F13DE971D2EF61A00E825A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F13DE961D2EF61A00E825A0 /* Assets.xcassets */; };
 		7F13DE9A1D2EF61A00E825A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F13DE981D2EF61A00E825A0 /* LaunchScreen.storyboard */; };
 		7F13DEA81D2EFF3C00E825A0 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F13DEA71D2EFF3C00E825A0 /* SpriteComponent.swift */; };
+		7F13DEAA1D2F060E00E825A0 /* LaneEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F13DEA91D2F060E00E825A0 /* LaneEntity.swift */; };
+		7F5CD8891D2F354300FCB638 /* LaneComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD8881D2F354300FCB638 /* LaneComponent.swift */; };
+		7F5CD88B1D2F355000FCB638 /* TowerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD88A1D2F355000FCB638 /* TowerComponent.swift */; };
+		7F5CD88D1D2F358700FCB638 /* TowerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CD88C1D2F358700FCB638 /* TowerEntity.swift */; };
+		7F8272501D3056C70005B70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82724F1D3056C60005B70E /* AppDelegate.swift */; };
+		7F8272581D3056C70005B70E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8272571D3056C70005B70E /* ViewController.swift */; };
+		7F82725D1D3056C70005B70E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F82725B1D3056C70005B70E /* Main.storyboard */; };
+		7FFADB121D2F1B5D004F14D3 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFADB111D2F1B5D004F14D3 /* EntityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +39,27 @@
 		7F13DE9B1D2EF61A00E825A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Sadari Defense (iOS)/Info.plist"; sourceTree = "<group>"; };
 		7F13DEA11D2EF63B00E825A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7F13DEA71D2EFF3C00E825A0 /* SpriteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpriteComponent.swift; path = "Sadari Defense/Components/SpriteComponent.swift"; sourceTree = SOURCE_ROOT; };
+		7F13DEA91D2F060E00E825A0 /* LaneEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaneEntity.swift; path = Entities/LaneEntity.swift; sourceTree = "<group>"; };
+		7F5CD8881D2F354300FCB638 /* LaneComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaneComponent.swift; path = Components/LaneComponent.swift; sourceTree = "<group>"; };
+		7F5CD88A1D2F355000FCB638 /* TowerComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TowerComponent.swift; path = Components/TowerComponent.swift; sourceTree = "<group>"; };
+		7F5CD88C1D2F358700FCB638 /* TowerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TowerEntity.swift; path = Entities/TowerEntity.swift; sourceTree = "<group>"; };
+		7F82724D1D3056C60005B70E /* Sadari Defense (macOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sadari Defense (macOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F82724F1D3056C60005B70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Sadari Defense/Sadari Defense (macOS)/AppDelegate.swift"; sourceTree = "<group>"; };
+		7F8272571D3056C70005B70E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Sadari Defense/Sadari Defense (macOS)/ViewController.swift"; sourceTree = SOURCE_ROOT; };
+		7F82725C1D3056C70005B70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F82725E1D3056C70005B70E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "Sadari Defense/Sadari Defense (macOS)/Info.plist"; sourceTree = "<group>"; };
+		7FFADB111D2F1B5D004F14D3 /* EntityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntityManager.swift; path = Entities/EntityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7F13DE831D2EF61A00E825A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F82724A1D3056C60005B70E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				7F13DE861D2EF61A00E825A0 /* Sadari Defense.app */,
+				7F82724D1D3056C60005B70E /* Sadari Defense (macOS).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,10 +90,11 @@
 		7F13DE881D2EF61A00E825A0 /* Sadari Defense */ = {
 			isa = PBXGroup;
 			children = (
-				7F13DEA61D2EFF1D00E825A0 /* Components */,
 				7F13DE8F1D2EF61A00E825A0 /* GameScene.swift */,
+				7F13DEA61D2EFF1D00E825A0 /* Components */,
 				7F13DEA51D2EFEDC00E825A0 /* Entities */,
 				7F13DEA41D2EFEC900E825A0 /* Assets */,
+				7F82724E1D3056C60005B70E /* Sadari Defense (macOS) */,
 				7F13DEA31D2EFEB600E825A0 /* iOS */,
 			);
 			path = "Sadari Defense";
@@ -100,6 +127,9 @@
 		7F13DEA51D2EFEDC00E825A0 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				7F5CD88C1D2F358700FCB638 /* TowerEntity.swift */,
+				7F13DEA91D2F060E00E825A0 /* LaneEntity.swift */,
+				7FFADB111D2F1B5D004F14D3 /* EntityManager.swift */,
 			);
 			name = Entities;
 			path = "Sadari Defense";
@@ -109,9 +139,22 @@
 			isa = PBXGroup;
 			children = (
 				7F13DEA71D2EFF3C00E825A0 /* SpriteComponent.swift */,
+				7F5CD8881D2F354300FCB638 /* LaneComponent.swift */,
+				7F5CD88A1D2F355000FCB638 /* TowerComponent.swift */,
 			);
 			name = Components;
 			path = "Sadari Defense";
+			sourceTree = SOURCE_ROOT;
+		};
+		7F82724E1D3056C60005B70E /* Sadari Defense (macOS) */ = {
+			isa = PBXGroup;
+			children = (
+				7F82724F1D3056C60005B70E /* AppDelegate.swift */,
+				7F8272571D3056C70005B70E /* ViewController.swift */,
+				7F82725B1D3056C70005B70E /* Main.storyboard */,
+				7F82725E1D3056C70005B70E /* Info.plist */,
+			);
+			path = "Sadari Defense (macOS)";
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -134,6 +177,23 @@
 			productReference = 7F13DE861D2EF61A00E825A0 /* Sadari Defense.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7F82724C1D3056C60005B70E /* Sadari Defense (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F82725F1D3056C70005B70E /* Build configuration list for PBXNativeTarget "Sadari Defense (macOS)" */;
+			buildPhases = (
+				7F8272491D3056C60005B70E /* Sources */,
+				7F82724A1D3056C60005B70E /* Frameworks */,
+				7F82724B1D3056C60005B70E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sadari Defense (macOS)";
+			productName = "Sadari Defense (macOS)";
+			productReference = 7F82724D1D3056C60005B70E /* Sadari Defense (macOS).app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,6 +205,12 @@
 				ORGANIZATIONNAME = "Matthew Tso";
 				TargetAttributes = {
 					7F13DE851D2EF61A00E825A0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RZ2DT6A2TM;
+						DevelopmentTeamName = "Matthew Tso (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					7F82724C1D3056C60005B70E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = RZ2DT6A2TM;
 						DevelopmentTeamName = "Matthew Tso (Personal Team)";
@@ -166,6 +232,7 @@
 			projectRoot = "";
 			targets = (
 				7F13DE851D2EF61A00E825A0 /* Sadari Defense */,
+				7F82724C1D3056C60005B70E /* Sadari Defense (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +250,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7F82724B1D3056C60005B70E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F82725D1D3056C70005B70E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -190,10 +265,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F13DEAA1D2F060E00E825A0 /* LaneEntity.swift in Sources */,
 				7F13DE901D2EF61A00E825A0 /* GameScene.swift in Sources */,
+				7F5CD88D1D2F358700FCB638 /* TowerEntity.swift in Sources */,
+				7FFADB121D2F1B5D004F14D3 /* EntityManager.swift in Sources */,
+				7F5CD88B1D2F355000FCB638 /* TowerComponent.swift in Sources */,
 				7F13DEA81D2EFF3C00E825A0 /* SpriteComponent.swift in Sources */,
 				7F13DE921D2EF61A00E825A0 /* GameViewController.swift in Sources */,
+				7F5CD8891D2F354300FCB638 /* LaneComponent.swift in Sources */,
 				7F13DE8A1D2EF61A00E825A0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F8272491D3056C60005B70E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8272581D3056C70005B70E /* ViewController.swift in Sources */,
+				7F8272501D3056C70005B70E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +305,15 @@
 			);
 			name = LaunchScreen.storyboard;
 			path = "Sadari Defense (iOS)";
+			sourceTree = "<group>";
+		};
+		7F82725B1D3056C70005B70E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F82725C1D3056C70005B70E /* Base */,
+			);
+			name = Main.storyboard;
+			path = "Sadari Defense/Sadari Defense (macOS)";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -334,6 +432,38 @@
 			};
 			name = Release;
 		};
+		7F8272601D3056C70005B70E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Sadari Defense/Sadari Defense (macOS)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mtso.Sadari-Defense--macOS-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7F8272611D3056C70005B70E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Sadari Defense/Sadari Defense (macOS)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mtso.Sadari-Defense--macOS-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +483,16 @@
 				7F13DEA01D2EF61A00E825A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F82725F1D3056C70005B70E /* Build configuration list for PBXNativeTarget "Sadari Defense (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F8272601D3056C70005B70E /* Debug */,
+				7F8272611D3056C70005B70E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
